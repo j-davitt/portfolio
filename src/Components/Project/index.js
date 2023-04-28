@@ -1,28 +1,35 @@
+import { Button, Card, CardContent, CardMedia, Typography, CardActions } from "@mui/material";
 import { projectData } from "../../assets/projectData";
 
 const Project = (props) => {
   return (
     <>
       {projectData.map((project) => (
-        <div className="card" key={project.id} style={styles.card}>
-          <div className="card-body" style={styles.card}>
-            <h5 className="card-title">{project.title}</h5>
-            <p className="card-text">{project.description}</p>
-          </div>
-          <img src={project.image} className="card-img-top" alt={project.title} />
-        </div>
+        <Card sx={{ maxWidth: 345 }}>
+          <CardMedia
+            component="img"
+            height="140"
+            image={project.image}
+            alt={project.title}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {project.title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {project.description}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" href={project.link}>Deployed</Button>
+            <Button size="small" href={project.github}>GitHub</Button>
+          </CardActions>
+
+        </Card>
       ))}
     </>
   )
 }
 
-const styles = StyleSheet.create({
-  card: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-});
 
 export default Project;
