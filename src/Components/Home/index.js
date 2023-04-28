@@ -1,9 +1,10 @@
+import Project from "../Project";
 
 
 const Home = () => {
   return (
     <>
-      
+      <Project />
     </>
   )
 }
