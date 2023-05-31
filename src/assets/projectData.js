@@ -9,4 +9,12 @@ export const projectData = [
     link: 'https://word-rummage.github.io/Word-Rummage/',
     github: 'https://github.com/j-davitt/WordRummage',
   },
+  {
+    id: 2,
+    title: 'Pantry Pirate',
+    description: 'A mobile app that allows user to create and share items for shopping lists and pantries.',
+    image: 'https://picsum.photos/200/300',
+    link: 'https://github.com/j-davitt/PantryPirate-FE',
+    github: 'https://github.com/j-davitt/PantryPirate-FE',
+  },
 ];

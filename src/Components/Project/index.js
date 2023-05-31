@@ -21,7 +21,7 @@ const Project = (props) => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" href={project.link}>Deployed</Button>
+            <Button size="small" href={project.link}>Link</Button>
             <Button size="small" href={project.github}>GitHub</Button>
           </CardActions>
 
