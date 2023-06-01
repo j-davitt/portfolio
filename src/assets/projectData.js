@@ -17,4 +17,12 @@ export const projectData = [
     link: 'https://github.com/j-davitt/PantryPirate-FE',
     github: 'https://github.com/j-davitt/PantryPirate-FE',
   },
+  {
+    id: 3,
+    title: 'Terminal Trivia Trials',
+    description: 'A command line interface trivia game that allows the user to select a category and difficulty level to play. Allows for multiplayer lobbies in real time.',
+    image: 'https://picsum.photos/200/300',
+    link: 'https://github.com/j-davitt/trivia-backend-client',
+    github: 'https://github.com/j-davitt/trivia-backend-client',
+  },
 ];
