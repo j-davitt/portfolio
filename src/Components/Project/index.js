@@ -9,7 +9,7 @@ const Project = (props) => {
           <Card sx={{ maxWidth: 400 }}>
             <CardMedia
               component="img"
-              height="140"
+              height="270"
               image={project.image}
               alt={project.title}
             />
