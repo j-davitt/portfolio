@@ -3,14 +3,19 @@ import photo from '../../assets/AboutPic.jpg';
 
 
 const About = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission here
+  };
+
   return (
     <>
       <h1>This is the About Me page!</h1>
       <Box
-      sx={{
-        width: 300,
-        height: 400,
-      }}
+        sx={{
+          width: 300,
+          height: 400,
+        }}
       >
         <img src={require('../../assets/AboutPic.jpg')} alt="Me" />
       </Box>
@@ -20,6 +25,22 @@ const About = () => {
       <h3>Foreman</h3>
       <h4>2014-2022</h4>
       <p>Ran excavation and landscaping crews for Four Seasons Excavating.</p>
+      <h3>Contact Me</h3>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" />
+        </label>
+        <label>
+          Message:
+          <textarea name="message" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </>
   )
 }
