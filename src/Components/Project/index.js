@@ -6,7 +6,7 @@ const Project = (props) => {
     <>
       <div className="projects">
         {projectData.map((project) => (
-          <Card sx={{ maxWidth: 500 }}>
+          <Card sx={{ maxWidth: 500, backgroundColor: '#947769' }}>
             <CardMedia
               component="img"
               height="270"
@@ -22,8 +22,8 @@ const Project = (props) => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" href={project.link}>Link</Button>
-              <Button size="small" href={project.github}>GitHub</Button>
+              <Button size="small" href={project.link} style={{ color: '#473024' }}>Link</Button>
+              <Button size="small" href={project.github} style={{ color: '#473024' }}>GitHub</Button>
             </CardActions>
 
           </Card>

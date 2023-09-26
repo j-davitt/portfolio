@@ -8,6 +8,8 @@ import About from './Components/About';
 function App() {
   return (
     <>
+    <div style={{ backgroundColor: '#699490' }}>
+
       <BrowserRouter>
         <HeaderComponent />
         <Routes>
@@ -17,6 +19,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+    </div>
     </>
   );
 }

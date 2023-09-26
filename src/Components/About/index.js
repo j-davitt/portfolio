@@ -26,21 +26,29 @@ const About = () => {
       <h4>2014-2022</h4>
       <p>Ran excavation and landscaping crews for Four Seasons Excavating.</p>
       <h3>Contact Me</h3>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Email:
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Message:
-          <textarea name="message" />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+      <Box sx={{
+        width: 500,
+        backgroundColor: '#947769'
+      }}>
+        <form onSubmit={handleSubmit} style={{
+          display: 'flex',
+          flexDirection: 'column',
+        }}>
+          <label>
+            Name:
+            <input type="text" name="name" />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Message:
+            <textarea name="message" />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </Box>
     </>
   )
 }
