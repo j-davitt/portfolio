@@ -47,6 +47,14 @@
   align-items: center;
 }
 
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 img {
   width: 100%;
   height: auto;
