@@ -20,12 +20,18 @@ const About = () => {
         >
           <img src={require('../../assets/AboutPic.jpg')} alt="Me" />
         </Box>
-        <h3>Marine Corps Veteran</h3>
-        <h4>2010-2014</h4>
-        <p>Served with 3d Combat Engineer Battalion in support of OEF with 2 combat deployments.</p>
-        <h3>Foreman</h3>
-        <h4>2014-2022</h4>
-        <p>Ran excavation and landscaping crews for Four Seasons Excavating.</p>
+        <Box
+          sx={{
+            backgroundColor: '#947769',
+          }}
+        >
+          <h3 style={{ color: '#2C4745' }}>Marine Corps Veteran</h3>
+          <h4>2010-2014</h4>
+          <p>Served with 3d Combat Engineer Battalion in support of Operation Enduring Freedom with 2 combat deployments.</p>
+          <h3>Foreman</h3>
+          <h4>2014-2022</h4>
+          <p>Ran excavation and landscaping crews for Four Seasons Excavating.</p>
+        </Box>
         <h3>Contact Me</h3>
         <Box sx={{
           width: 500,
