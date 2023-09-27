@@ -6,7 +6,7 @@ const Project = (props) => {
     <>
       <div className="projects">
         {projectData.map((project) => (
-          <Card sx={{ maxWidth: 500, backgroundColor: '#947769' }}>
+          <Card sx={{ maxWidth: 500, backgroundColor: '#947769', margin: 2, }}>
             <CardMedia
               component="img"
               height="270"
