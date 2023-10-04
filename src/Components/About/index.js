@@ -82,7 +82,7 @@ const About = () => {
                   backgroundColor: '#fff',
                 }} />
 
-              <Button type="submit" variant="contained" color='success' onClick={handleSubmit}>Submit</Button>
+              <Button type="submit" style={{ color: '#2C4745' }} onClick={handleSubmit}>Submit</Button>
             </FormControl>
           )}
         </Box>
