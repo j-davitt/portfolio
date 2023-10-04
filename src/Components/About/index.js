@@ -1,10 +1,18 @@
-import { Box } from '@mui/material';
+import { Box, TextField, Button, FormControl, FormLabel, Typography } from '@mui/material';
 import photo from '../../assets/AboutPic.jpg';
+import { useState } from 'react';
+
 
 
 const About = () => {
+  const [formName, setFormName] = useState('');
+  const [formEmail, setFormEmail] = useState('');
+  const [formMessage, setFormMessage] = useState('');
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
+    setFormSubmitted(true);
     // Handle form submission here
   };
 
@@ -37,24 +45,46 @@ const About = () => {
           width: 500,
           backgroundColor: '#947769'
         }}>
-          <form onSubmit={handleSubmit} style={{
-            display: 'flex',
-            flexDirection: 'column',
-          }}>
-            <label>
-              Name:
-              <input type="text" name="name" />
-            </label>
-            <label>
-              Email:
-              <input type="email" name="email" />
-            </label>
-            <label>
-              Message:
-              <textarea name="message" />
-            </label>
-            <button type="submit">Submit</button>
-          </form>
+          {formSubmitted ? (
+            <Box sx={{
+              height: 200,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+              <Typography>Thank you!</Typography>
+            </Box>
+          ) : (
+            <FormControl style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+              <FormLabel>Name</FormLabel>
+              <TextField
+                onChange={(e) => setFormName(e.target.value)}
+                sx={{
+                  backgroundColor: '#fff',
+                }}
+              />
+              <FormLabel>Email</FormLabel>
+              <TextField
+                onChange={(e) => setFormEmail(e.target.value)}
+                sx={{
+                  backgroundColor: '#fff',
+                }} />
+              <FormLabel>Message</FormLabel>
+              <TextField
+                onChange={(e) => setFormMessage(e.target.value)}
+                sx={{
+                  backgroundColor: '#fff',
+                }} />
+
+              <Button type="submit" onClick={handleSubmit}>Submit</Button>
+            </FormControl>
+          )}
         </Box>
       </div>
     </>
