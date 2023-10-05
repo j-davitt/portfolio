@@ -76,6 +76,11 @@ const About = () => {
               <TextField
                 onChange={(e) => setFormMessage(e.target.value)}
                 className='form-input'
+                multiline={true}
+                rows={5}
+                sx={{
+                  width: 400,
+                }}
               />
 
               <Button type="submit" style={{ color: '#2C4745' }} onClick={handleSubmit}>Submit</Button>
