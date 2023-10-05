@@ -31,10 +31,11 @@ const About = () => {
         <Box
           sx={{
             borderRadius: '5px',
-            backgroundColor: '#947769',
+            backgroundColor: '#A2A685',
+            padding: 2,
           }}
         >
-          <h3 style={{ color: '#2C4745' }}>Marine Corps Veteran</h3>
+          <h3>Marine Corps Veteran</h3>
           <h4>2010-2014</h4>
           <p>Served with 3d Combat Engineer Battalion in support of Operation Enduring Freedom with 2 combat deployments.</p>
           <h3>Foreman</h3>
@@ -45,7 +46,7 @@ const About = () => {
         <Box sx={{
           borderRadius: '5px',
           width: 500,
-          backgroundColor: '#947769'
+          backgroundColor: '#A2A685'
         }}>
           {formSubmitted ? (
             <Box sx={{
@@ -85,7 +86,7 @@ const About = () => {
                 }}
               />
 
-              <Button type="submit" style={{ color: '#2C4745' }} onClick={handleSubmit}>Submit</Button>
+              <Button type="submit" style={{ color: '#53582C' }} onClick={handleSubmit}>Submit</Button>
             </FormControl>
           )}
         </Box>
