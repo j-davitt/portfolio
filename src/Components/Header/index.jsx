@@ -16,9 +16,10 @@ const HeaderComponent = () => {
             <Link to='/about'>
               <Button variant="contained" style={{ background: '#699490' }}>About Me</Button>
             </Link>
-            {/* <Link to='https://github.com/j-davitt'>
+            <Link to='https://github.com/j-davitt' 
+            style={{ marginLeft: '10px', marginTop: '5px', textDecoration: 'none', color: '#699490' }}>
               <GitHubIcon />
-            </Link> */}
+            </Link>
           </ButtonGroup>
         </Toolbar>
       </AppBar>
