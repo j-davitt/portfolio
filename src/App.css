@@ -64,6 +64,11 @@ img {
   height: auto;
 }
 
+.form-input {
+  border-radius: 5px;
+  background-color: #fff;
+}
+
 /* * {
   background-color: #377175;
 } */

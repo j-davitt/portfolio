@@ -65,22 +65,18 @@ const About = () => {
               <FormLabel>Name</FormLabel>
               <TextField
                 onChange={(e) => setFormName(e.target.value)}
-                sx={{
-                  backgroundColor: '#fff',
-                }}
+                className='form-input'
               />
               <FormLabel>Email</FormLabel>
               <TextField
                 onChange={(e) => setFormEmail(e.target.value)}
-                sx={{
-                  backgroundColor: '#fff',
-                }} />
+                className='form-input'
+              />
               <FormLabel>Message</FormLabel>
               <TextField
                 onChange={(e) => setFormMessage(e.target.value)}
-                sx={{
-                  backgroundColor: '#fff',
-                }} />
+                className='form-input'
+              />
 
               <Button type="submit" style={{ color: '#2C4745' }} onClick={handleSubmit}>Submit</Button>
             </FormControl>
