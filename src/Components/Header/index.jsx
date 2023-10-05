@@ -7,18 +7,19 @@ const HeaderComponent = () => {
   return (
 
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{ background: '#2C4745' }}>
+      <AppBar position="static" style={{ background: '#70735C' }}>
         <Toolbar>
           <ButtonGroup variant="text" aria-label="text button group">
             <Link to='/'>
-              <Button variant="contained" style={{ background: '#699490', marginRight: '10px' }}>Home</Button>
+              <Button variant="contained" style={{ background: '#53582C', marginRight: '10px' }}>Home</Button>
             </Link>
             <Link to='/about'>
-              <Button variant="contained" style={{ background: '#699490' }}>About Me</Button>
+              <Button variant="contained" style={{ background: '#53582C' }}>About Me</Button>
             </Link>
-            {/* <Link to='https://github.com/j-davitt'>
+            <Link to='https://github.com/j-davitt' 
+            style={{ marginLeft: '10px', marginTop: '5px', textDecoration: 'none', color: '#53582C' }}>
               <GitHubIcon />
-            </Link> */}
+            </Link>
           </ButtonGroup>
         </Toolbar>
       </AppBar>
