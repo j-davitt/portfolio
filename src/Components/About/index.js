@@ -33,14 +33,38 @@ const About = () => {
             borderRadius: '5px',
             backgroundColor: '#A2A685',
             padding: 2,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
-          <h3>Marine Corps Veteran</h3>
-          <h4>2010-2014</h4>
-          <p>Served with 3d Combat Engineer Battalion in support of Operation Enduring Freedom with 2 combat deployments.</p>
-          <h3>Foreman</h3>
-          <h4>2014-2022</h4>
-          <p>Ran excavation and landscaping crews for Four Seasons Excavating.</p>
+          <Box
+            sx={{
+              width: 300,
+              height: 400,
+            }}
+          >
+            <img src={require('../../assets/costume.JPG')} alt="Me" />
+          </Box>
+          <Box
+            sx={{
+              width: '80%',
+            }}
+          >
+            <h3>Marine Corps Veteran</h3>
+            <h4>2010-2014</h4>
+            <p>Served with 3d Combat Engineer Battalion in support of Operation Enduring Freedom with 2 combat deployments.</p>
+          </Box>
+          <Box
+            sx={{
+              width: '80%',
+            }}
+          >
+            <h3>Foreman</h3>
+            <h4>2014-2022</h4>
+            <p>Ran excavation and landscaping crews for Four Seasons Excavating.</p>
+          </Box>
         </Box>
         <h3>Contact Me</h3>
         <Box sx={{

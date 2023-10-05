@@ -8,7 +8,7 @@ import About from './Components/About';
 function App() {
   return (
     <>
-    <div style={{ backgroundColor: '#DEE0E0' }}>
+    <div style={{ backgroundColor: '#C5C7C7' }}>
 
       <BrowserRouter>
         <HeaderComponent />
