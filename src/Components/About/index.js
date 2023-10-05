@@ -30,6 +30,7 @@ const About = () => {
         </Box>
         <Box
           sx={{
+            borderRadius: '5px',
             backgroundColor: '#947769',
           }}
         >
@@ -42,6 +43,7 @@ const About = () => {
         </Box>
         <h3>Contact Me</h3>
         <Box sx={{
+          borderRadius: '5px',
           width: 500,
           backgroundColor: '#947769'
         }}>
