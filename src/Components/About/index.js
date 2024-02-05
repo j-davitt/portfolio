@@ -93,11 +93,13 @@ const About = () => {
               <TextField
                 onChange={(e) => setFormName(e.target.value)}
                 className='form-input'
+                defaultValue={'WORK IN PROGRESS'}
               />
               <FormLabel>Email</FormLabel>
               <TextField
                 onChange={(e) => setFormEmail(e.target.value)}
                 className='form-input'
+                defaultValue={'WORK IN PROGRESS'}
               />
               <FormLabel>Message</FormLabel>
               <TextField
@@ -108,6 +110,7 @@ const About = () => {
                 sx={{
                   width: 400,
                 }}
+                defaultValue={'WORK IN PROGRESS'}
               />
 
               <Button type="submit" style={{ color: '#53582C' }} onClick={handleSubmit}>Submit</Button>
